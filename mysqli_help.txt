@@ -1,0 +1,15 @@
+$conn = new mysqli('localhost', 'root', 'pass', 'db');
+
+$query = "insert into users (fio, mail) values('$fi0', '$mail')";
+
+$result = mysqli_query($conn, $query) or die("Ошибка " . mysqli_error($conn)); 
+
+$result = mysqli_fetch_assoc($result);
+
+$itog = [];
+while($lines = mysqli_fetch_assoc($result))
+{
+    array_push($itog, $lines);                      //массив объектов из строк БД
+}
+  
+mysqli_close($conn);
