@@ -1,0 +1,5 @@
+chmod -R 777 /var/www/
+tail -f /var/log/apache2/error.log
+ps aux| grep mocp
+kill -9 111111
+netstat -lpn |grep :3000
