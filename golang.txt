@@ -1,0 +1,6 @@
+/*BUILD FOR LINUX*/
+go env GOOS GOARCH
+set GOOS=linux
+set GOARCH=amd64
+go build
+/*BUILD FOR LINUX*/
