@@ -1,5 +1,0 @@
-sounds.forEach(function(item, i, arr) {});
-
-for(let i=0; i<5; i++) {}
-
-while(true) {}
